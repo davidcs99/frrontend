@@ -1,10 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import {LoginComponent}from'./vistas/login/login.component'
+import{NuevoComponent}from'./vistas/nuevo/nuevo.component'
+import{EditarComponent}from'./vistas/editar/editar.component'
+import{DashboardComponent}from'./vistas/dashboard/dashboard.component'
+import{HomeComponent}from'./home/home.component'
+import{CuerpoComponent}from'./cuerpo/cuerpo.component'
+const routes: Routes = [
+  {path:'',redirectTo:'login',pathMatch:'full'},
+  {path:'login', component:LoginComponent},
+  {path:'dashboard', component:DashboardComponent},
+  {path:'nuevo', component:NuevoComponent},
+  {path:'home', component:HomeComponent},
+  {path:'cuerpo', component:CuerpoComponent},
+  {path:'editar/:id', component:EditarComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const routingComponents=[LoginComponent,DashboardComponent, NuevoComponent, EditarComponent]

@@ -1,0 +1,120 @@
+ <app-header></app-header>
+
+ <br>
+ <br>
+<div
+  class="container"
+  style="border: 3px solid red; padding: 20px; border-radius: 8px"
+>
+<form [formGroup]="newForm" (ngSubmit)="postForm(newForm.value)">
+
+    <h2 style="text-align: center">Nuevo Empleado</h2>
+    <br />
+    <div class="form-group row">
+      <div class="col">
+        <label for="exampleFormControlInput1"><b>Nombre y Apellidos</b></label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Nombre y Apellidos"
+          formControlName="nombre"
+        />
+      </div>
+      <div class="col">
+        <label for="exampleFormControlInput1"><b>Direccion</b></label>
+        <input type="text" class="form-control"  placeholder="Direccion" formControlName="direccion">
+      </div>
+    </div>
+
+    <br />
+    <div class="form-group row">
+      <div class="col">
+        <label for="exampleFormControlInput1"><b>Email</b></label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Email"
+          formControlName="correo"
+        />
+      </div>
+      <div class="col">
+        <label for="exampleFormControlInput1"><b>Genero</b></label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Masculino o Femenino"
+          formControlName="genero"
+        />
+      </div>
+    </div>
+    <br />
+
+    <div class="form-group row">
+      <div class="col">
+        <label for="exampleFormControlInput1"><b>Cedula</b></label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Cedula"
+          formControlName="dni"
+        />
+      </div>
+      <div class="col">
+        <label for="exampleFormControlInput1"><b>Estado civil</b></label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Estado civil"
+          formControlName="codigoPostal"
+        />
+      </div>
+    </div>
+    <br />
+    <div class="form-group row">
+      <div class="col">
+        <label for="exampleFormControlInput1"><b>Celular</b></label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Celular"
+          formControlName="telefono"
+        />
+      </div>
+
+      <div class="col">
+        <label for="exampleFormControlInput1"><b>Fecha nacimiento</b></label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="AAA - MM - DD"
+          formControlName="fechaNacimiento"
+        />
+      </div>
+    </div>
+
+    <br />
+    <!--  -->
+    <!-- Botones  -->
+    <div class="container-fluid h-100">
+      <div class="row w-100 align-items-center">
+        <div class="col-6 text-center">
+          <button type="submit" class="btn btn-danger btn-lg active">
+            Guardar
+          </button>
+        </div>
+
+        <div class="col-6 text-center">
+          <button
+            type="button"
+            class="btn btn-danger btn-lg active"
+            (click)="salir()"
+          >
+            Regresar
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<app-footer></app-footer>

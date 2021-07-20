@@ -1,0 +1,56 @@
+<app-header></app-header>
+
+<div class="container">
+  <br>
+  <br>
+  <h2 style="text-align: center;">Lista de empleados</h2>
+
+
+<br>
+  <table class="table">
+    <thead class="thead-dark" style="background-color:red;">
+      <tr style=" color: white;">
+        <th scope="col">ID</th>
+        <th scope="col">NOMBE</th>
+
+        <th scope="col">CEDULA</th>
+        <th scope="col">IMAGEN</th>
+
+        <th scope="col">EMAIL</th>
+        <th scope="col">CELULAR</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let empleado of empleados" (click)="editarEmpleado(empleado.PacienteId)">
+        <th scope="row">{{ empleado.PacienteId }}</th>
+        <td>{{ empleado.Nombre }}</td>
+        <td>{{ empleado.DNI }}</td>
+        <td><img src="https://ichi.pro/assets/images/max/724/1*nxBpQNZx2pmLWr5lVsYkPA.png"  width=" 50px"></td>
+        <td>{{ empleado.Correo }}</td>
+        <td>{{ empleado.Telefono }}</td>
+
+
+
+
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<div class="container-fluid h-100">
+  <div class="row w-100 align-items-center">
+    <div class="col text-center">
+      <button class="btn btn-dark text-white regular-button"(click)="nuevoEmpleado()"> Agregar Nuevo Empleado </button>
+    </div>
+  </div>
+
+
+</div>
+
+
+<app-footer></app-footer>

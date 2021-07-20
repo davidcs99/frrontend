@@ -1,0 +1,190 @@
+<app-header></app-header>
+
+<!-- Cuerpo de la pagina  -->
+
+<div class="row">
+  <div class="col-3 d-none d-md-block">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <a
+          class="btn"
+          data-bs-toggle="collapse"
+          href="#multiCollapseAsignatura"
+          role="button"
+          aria-expanded="false"
+          aria-controls="multiCollapseAsignatura"
+        >
+          Historia</a
+        >
+      </li>
+      <li class="list-group-item">
+        <a
+          class="btn"
+          data-bs-toggle="collapse"
+          href="#multiCollapseEstudiantes"
+          role="button"
+          aria-expanded="false"
+          aria-controls="multiCollapseEstudiantes"
+        >
+          Mision</a
+        >
+      </li>
+      <li class="list-group-item">
+        <a
+          class="btn"
+          data-bs-toggle="collapse"
+          href="#multiCollapseCalificaciones"
+          role="button"
+          aria-expanded="false"
+          aria-controls="multiCollapseCalificaciones"
+        >
+          Vision</a
+        >
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-6">
+    <router-outlet>
+      <div class="collapse show" id="multiCollapseAsignatura">
+        <div class="card card-body">
+          <div class="row">
+            <div class="col-12">
+              <h1>Importadora tomebamba</h1>
+              <p style="text-align: justify">
+                En 1964 cinco empresarios cuencanos liderados por Guillermo
+                Vázquez Astudillo decidieron formar la compañía Importadora
+                Tomebamba S.A. emprendiendo el reto de convertirla, a través de
+                la distribución de vehículos, en una de las empresas más
+                importantes del país. El paso del tiempo permitió que este
+                objetivo se convirtiera en realidad, puesto que al momento, la
+                empresa se encuentra catalogada entre las más importantes del
+                Ecuador por el volumen de ventas, nivel de activos, resultados y
+                valor patrimonial. Desde su inicio, Importadora Tomebamba S.A.
+                se caracterizó por representar vía distribución y
+                comercialización marcas líderes en el mercado mundial. Con mucho
+                orgullo y satisfacción, la empresa inició sus actividades con la
+                representación de vehículos TOYOTA para luego ir ampliando sus
+                líneas. Desde un primer momento se quiso diferenciar de la
+                competencia no solo por las marcas que ofrece sino sobre todo
+                por la calidad en la atención al cliente, constituyéndose el
+                servicio en la prioridad de nuestras actividades.
+                <br />
+              </p>
+
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/NTA2jlhk6MQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collapse show" id="multiCollapseAsignatura">
+        <div class="card card-body">
+          <div class="row">
+            <div class="col-12">
+              <h1 style="text-align: center">Mision</h1>
+              <p style="text-align: justify">
+                Satisfacer adecuadamente las necesidades de nuestros clientes,
+                así como las de nuestro personal a través de la realización de
+                una gestión comercial enmarcada dentro del respeto al entorno,
+                de la preservación del medio ambiente y del apoyo a la comunidad
+                y gobierno, con el objetivo final de generar los rendimientos
+                que nuestros accionistas requieren.
+                <br />
+              </p>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/r68EIN5urpc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse show" id="multiCollapseAsignatura">
+        <div class="card card-body">
+          <div class="row">
+            <div class="col-12">
+              <h1 style="text-align: center">Vision</h1>
+              <p style="text-align: justify">
+                Ser el líder en la comercialización de nuestras líneas de
+                productos, reconocido por su éxito y respetado por contribuir
+                con sus colaboradores, con la comunidad y el medio ambiente.
+                <br />
+              </p>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/vj8LtrG2WqI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </router-outlet>
+  </div>
+
+  <div class="col-3 d-none d-md-block">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <h1>Ultimas noticias</h1>
+      </li>
+      <li class="list-group-item">31/06 - Conoce el Nuevo Integrante de la familia Toyota del Ecuador</li>
+      <li class="list-group-item">01/07 - Accede a tu Toyota exonerado 2021!</li>
+      <li class="list-group-item">
+        19/07 - Video de promocion del nuevo mazda c3 2021
+      </li>
+      <li class="list-group-item">
+        <h1>Proximos eventos</h1>
+      </li>
+
+      <li class="list-group-item">29/07 - Sorteo de Hyundai Tucson ix 2021</li>
+      <li class="list-group-item">30/07 - Sorteo de Nissan Qashqai</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Pie de pagina -->
+<!-- <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <h6 class="text-muted lead">CONTACTO:</h6>
+        <h6 class="text-muted">
+          Vargas machuca entre Presidente Cordova <br />
+          y Juan Jaramillo.<br />
+          Teléfonos: 593 (07) 2-830-751<br />
+          2-830-877<br />
+          2-824-365
+        </h6>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="pull-right"></div>
+        <div class="row">
+          <p class="text-muted small text-right">
+            Luis Clavijo, Paginas web @2021.<br />
+            Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+<app-footer> </app-footer>
